@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> Index </title>
+</head><html>
+<head>
+<title> Index </title>
+</head>
+<body>
+<h1> Prodotti </h1>
+
+<br>
+<br>
+<input type= "button" value= "Richiesta" onclick="Richiesta()"/>
+
+</form>
+
+<script type = "text/javascript">
+function Richiesta(){
+var n=0;
+var s=0;
+
+while(true){
+prod=prompt("Inserire il nome del prodotto (* per terminare)","");
+if(prod=="*"){
+break;
+};
+prez=prompt("Inserire il prezzo :","");
+
+window.alert("Nome prodotto: "+prod+", Prezzo prodotto :"+prez+".");
+
+s=Number(s)+Number(prez);
+}
+
+
+window.alert("Il prezzo totale è  "+s+" dei prodotti");
+}
+
+
+</script>
+
+</body>
+</html>
